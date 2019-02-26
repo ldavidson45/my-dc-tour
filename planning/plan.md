@@ -47,11 +47,32 @@ Tours:
 
 ## User
 
+| URL           | Path | Method | Action | Description                            |
+|---------------|------|--------|--------|----------------------------------------|
+| /landmark     | /    | GET    | index  | list all landmarks                     |
+| /landmark/new | /new | GET    | new    | Render a form to create a new landmark |
+| /resource     | /    | POST   | create | Create new landmark in the database    |
+
+
 ## Landmarks
+
+| URL           | Path | Method | Action | Description                            |
+|---------------|------|--------|--------|----------------------------------------|
+| /landmark     | /    | GET    | index  | list all landmarks                     |
+| /landmark/new | /new | GET    | new    | Render a form to create a new landmark |
+| /landmark     | /    | POST   | create | Create new landmark in the database    |
 
 ## Tours
 
-
+| URL          | Path      | Method | Action  | Description                         |
+|--------------|-----------|--------|---------|-------------------------------------|
+| /tour        | /         | GET    | index   | list all tours by a logged in user  |
+| /tour/new    | /new      | GET    | new     | Render a form to create a new tour  |
+| /tour        | /         | POST   | create  | Create new tour in the database     |
+| /resource/1  | /:id      | GET    | show    | Show a single tour                  |
+| /tour/1/edit | /:id/edit | GET    | edit    | Render form to update a single tour |
+| /tour/1      | /:id      | PUT    | update  | Update tour in the database         |
+| /resource/1  | /:id      | DELETE | delete | Delete a tour                       |
 
 # MVP
 
