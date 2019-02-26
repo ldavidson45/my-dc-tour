@@ -19,7 +19,7 @@ User:
 - name
 - email
 - Tours
-- lamdmarksFavorited
+- landmarksFavorited
 - favorites: [ref: ObjectIds]
 
 new Schema({
@@ -32,10 +32,6 @@ Landmarks:
 - address
 - neighborhood
 - keywords
-- ratings
-- comments
-- facts
-- popularity (optional)
 
 Tours:
 - title
