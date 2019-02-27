@@ -1,4 +1,4 @@
-const Landmark = require("../models/index");
+const Landmark = require("../models/Landmark");
 
 Landmark.remove({}).then(function() {
     Landmark.create({
@@ -12,7 +12,7 @@ Landmark.remove({}).then(function() {
         },
         neighborhood: "National Mall"
     });
-    
+
     Landmark.create({
         title: "Anderson House",
         description: "Anderson House was built between 1902 and 1905 as the winter residence of Larz Anderson, an American diplomat, and his wife, Isabel Weld Perkins, an author and American Red Cross volunteer. Architects Arthur Little and Herbert W.C. Browne of Boston, Massachusetts, designed the home in the Beaux-Arts style. The Andersons used the house to entertain the social and political elite of America and abroad, as well as to showcase their collection of fine art and historic artifacts that the couple acquired in their extensive travels over the forty years of their marriage",
