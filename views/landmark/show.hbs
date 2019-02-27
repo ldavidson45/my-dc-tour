@@ -3,5 +3,13 @@
     <h5 class="card-title">{{landmark.title}}</h5>
     <p class="card-text">{{landmark.description}}</p>
     <a href="/application" class="btn btn-primary">Back</a>
+    <a href="{{landmark.id}}/edit" class="btn btn-primary">Edit</a>
+
+
+    <form action="/landmark/{{landmark.id}}?_method=DELETE" method="post" class="d-inline">
+      <input type="submit" value="Delete" class="btn btn-danger">
+    </form>
+
+
   </div>
 </div>
