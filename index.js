@@ -11,4 +11,6 @@ app.use(bodyParser.urlencoded( { extended: true}));
 app.set("view engine", "hbs");
 app.use(methodOverride("_method"));
 
+app.use(require('./routes/index.js'))
+
 app.listen(3000, () => console.log("server is listening on port 3000"))
