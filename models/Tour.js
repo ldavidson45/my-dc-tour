@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const TourSchema = new Schema ({
     title: String,
     description: String,
-    landmarks: [{type: Schema.ObjectID, ref: 'Landmark'}],
+    landmarks: [{type: Schema.ObjectId, ref: 'Landmark'}],
 })
 
 
