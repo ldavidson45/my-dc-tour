@@ -1,39 +1,24 @@
-<h1>Tour Title</h1>
+<div class="d-flex flex-column">
 
-<p>Description</p>
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col">
-            <ul class="list-group">
-<div class="accordion" id="accordionExample">
-
-    {{#each landmark}}
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          {{title}}
-          {{address.street}}
-        </button>
-      </h2>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-          {{description}}
+  <h1>{{tour.title}}</h1>
+  <p>{{tour.description}}</p>
+  <div class="d-flex flex-row">
+    <div>
+      {{#each tour.landmarks}}
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              {{title}}
+            </button>
+          </h2>
+        </div>
       </div>
+      {{/each}}
+    </div>
+    <div>
+      map
     </div>
   </div>
-  {{/each}}
-
-
-</div>
-</ul>
-        </div>
-        <div class="col-8 bg-success">
-            map
-        </div>
-    </div>
-
 </div>

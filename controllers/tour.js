@@ -9,18 +9,23 @@ module.exports = {
         })
     },
     create: function(req, res){
-        const sites = [req.body.landmark.value]
-        console.log(sites)
-        // Tour.create({
-        //     title: req.body.title,
-        //     description: req.body.description
-        // }).then(tour => {
-        //     Landmark.find()
-        // })
+        const { title, description } = req.body;
+        Tour.create({
+            title,
+            description,
+            landmarks: req.body.landmark
+        }).then(tour => {
+            res.redirect(`/tour/${tour._id}`)
+        })
     },
+
     show: function(req, res){
-        res.render('tour/show')
-    },
+        Tour.findById(req.params.id)
+        .populate("landmarks")
+        .then(tour => {
+            res.render('tour/show', { tour })
+
+        })    },
     edit: function(req, res) {
         res.render('tour/edit')
     },
