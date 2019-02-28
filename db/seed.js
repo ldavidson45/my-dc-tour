@@ -8,19 +8,23 @@ Landmark.remove({}).then(function() {
             street: "2 15th St NW",
             city: "Washington",
             state: "D.C.",
-            zipcode: 20024
+            zipcode: 20024,
+            lat: 38.889484,
+            lng: -77.035278
         },
         neighborhood: "National Mall"
     });
 
     Landmark.create({
-        title: "Anderson House",
+        title: "Larz Anderson House",
         description: "Anderson House was built between 1902 and 1905 as the winter residence of Larz Anderson, an American diplomat, and his wife, Isabel Weld Perkins, an author and American Red Cross volunteer. Architects Arthur Little and Herbert W.C. Browne of Boston, Massachusetts, designed the home in the Beaux-Arts style. The Andersons used the house to entertain the social and political elite of America and abroad, as well as to showcase their collection of fine art and historic artifacts that the couple acquired in their extensive travels over the forty years of their marriage",
         address: {
             street: "2118 Massachusetts Avenue, NW",
             city: "Washington",
             state: "D.C.",
-            zipcode: 20008
+            zipcode: 20008,
+            lat: 42.31055 ,
+            lng: -71.13482
         }
     });
 
@@ -31,7 +35,9 @@ Landmark.remove({}).then(function() {
             street: "1850 West Basin Dr SW",
             city: "Washington",
             state: "D.C.",
-            zipcode: 20008
+            zipcode: 20008,
+            lat: 38.883475,
+            lng: -77.042954
         }
     });
 
@@ -42,29 +48,10 @@ Landmark.remove({}).then(function() {
             street: "5 Henry Bacon Dr SW",
             city: "Washington",
             state: "D.C.",
-            zipcode: 20008
+            zipcode: 20008,
+            lat: 38.890590,
+            lng: -77.047001
         }
     });
 
-    Landmark.create({
-        title: "Albert Einstein Memorial",
-        description: "The Albert Einstein Memorial is a monumental bronze statue depicting Albert Einstein seated with manuscript papers in hand by sculptor Robert Berks.",
-        address: {
-            street: "2101 Constitution Ave NW",
-            city: "Washington",
-            state: "D.C.",
-            zipcode: 20008
-        }
-    });
-
-    Landmark.create({
-        title: "Peace Monument",
-        description: "The Peace Monument, also known as the Naval Monument or Civil War Sailors Monument, stands on the grounds of the United States Capitol in Peace Circle at First Street, N.W., and Pennsylvania Avenue, Washington, D.C.",
-        address: {
-            street: "N/A",
-            city: "Washington",
-            state: "D.C.",
-            zipcode: 20008
-        }
-    });
 })

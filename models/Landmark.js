@@ -9,6 +9,8 @@ const LandmarkSchema = new Schema({
         city: String,
         state: String,
         zipcode: Number,
+        lat: Number,
+        lng: Number
     },
     neighborhood: String,
     

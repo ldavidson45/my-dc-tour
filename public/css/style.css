@@ -11,3 +11,8 @@ p {
   html {
       height: 100vh;
   }
+
+  i {
+      color: white;
+      font-size: 25px;
+  }

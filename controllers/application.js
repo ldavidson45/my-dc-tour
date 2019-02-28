@@ -5,6 +5,7 @@ module.exports = {
         Landmark.find({})
         .then(landmarks => {
             res.render('index', { landmarks })
-        })
+        });
+        
     }
 }
