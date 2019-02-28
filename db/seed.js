@@ -24,5 +24,47 @@ Landmark.remove({}).then(function() {
         }
     });
 
+    Landmark.create({
+        title: "Franklin Delano Roosevelt Memorial",
+        description: "In honor of President Franklin Delano Roosevelt's four terms in office, the memorial is divided into four outdoor rooms where statues and murals stand to represent issues from the Great Depression to World War II. When visiting the FDR memorial, visitors have the opportunity to learn about and reflect on some of the most significant events in this country's history while enjoying some of the best views of the Tidal Basin and iconic cherry blossom trees that surround it.",
+        address: {
+            street: "1850 West Basin Dr SW",
+            city: "Washington",
+            state: "D.C.",
+            zipcode: 20008
+        }
+    });
 
+    Landmark.create({
+        title: "Vietnam Women's Memorial",
+        description: "The Vietnam Women's Memorial is a memorial dedicated to the women of the United States who served in the Vietnam War, most of whom were nurses. It serves as a reminder of the importance of women in the conflict. It depicts three uniformed women with a wounded soldier. Wikipedia",
+        address: {
+            street: "5 Henry Bacon Dr SW",
+            city: "Washington",
+            state: "D.C.",
+            zipcode: 20008
+        }
+    });
+
+    Landmark.create({
+        title: "Albert Einstein Memorial",
+        description: "The Albert Einstein Memorial is a monumental bronze statue depicting Albert Einstein seated with manuscript papers in hand by sculptor Robert Berks.",
+        address: {
+            street: "2101 Constitution Ave NW",
+            city: "Washington",
+            state: "D.C.",
+            zipcode: 20008
+        }
+    });
+
+    Landmark.create({
+        title: "Peace Monument",
+        description: "The Peace Monument, also known as the Naval Monument or Civil War Sailors Monument, stands on the grounds of the United States Capitol in Peace Circle at First Street, N.W., and Pennsylvania Avenue, Washington, D.C.",
+        address: {
+            street: "N/A",
+            city: "Washington",
+            state: "D.C.",
+            zipcode: 20008
+        }
+    });
 })
