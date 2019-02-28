@@ -1,11 +1,22 @@
-const { Tour } = require ("../models/Tour");
+const Tour = require ("../models/Tour");
+const Landmark = require("../models/Landmark")
 
 module.exports = {
     new: function(req, res) {
-        res.render('tour/new')
+        Landmark.find({})
+        .then(landmarks => {
+        res.render('tour/new', { landmarks })
+        })
     },
     create: function(req, res){
-
+        const sites = [req.body.landmark.value]
+        console.log(sites)
+        // Tour.create({
+        //     title: req.body.title,
+        //     description: req.body.description
+        // }).then(tour => {
+        //     Landmark.find()
+        // })
     },
     show: function(req, res){
         res.render('tour/show')
