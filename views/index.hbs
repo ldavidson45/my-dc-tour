@@ -1,4 +1,33 @@
-<div class="container-fluid">
+<div class="container-fluid d-flex flex-column h-100 p-0">
+  <div class="contianer-fluid" style="height: 5rem"></div>
+  <div class="d-flex flex-row h-100">
+  <aside class="container d-flex flex-column index-list" style="width: 35%">
+    <h1 class="form-title pt-3">Landmarks <hr></h1>
+    <div class="d-flex flex-column scrollable">
+      {{#each landmarks}}
+      <div>
+        <a class="landmark-link" href="landmark/{{id}}">{{title}}</a>
+        <p class="address-line">{{address.street}}</p>
+        <hr>
+      </div>
+      {{/each}}
+
+    </div>
+  </aside>
+  <div class="container-fluid" id="map">
+map
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+{{!-- <div class="container-fluid">
   <div class="row">
     <div class="col scrollable">
       <ul class="list-group">
@@ -17,4 +46,4 @@
 
   </div>
 
-</div>
+</div> --}}
