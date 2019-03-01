@@ -78,14 +78,14 @@ Tours:
 
 ## Bronze
 
-Users can:
-- sign up
-- log in
-- log out
-- create, view, favorite, rate, and comment on Landmarks
-- create, view, update, comment on, favorite, and rate Tours
+- Landmark and Tour models
+- create, view, update, and delete Landmarks
+- create, view, update, and delete Tours
 
 ## Silver
+
+- User model with signup and login functionality with authentication
+- google map with landmarks pinned.
 
 ## Gold
 - User can allow the app to view their location, and will send them push notifications when they are near a historical marker
