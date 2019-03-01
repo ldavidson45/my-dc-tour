@@ -1,20 +1,20 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col">
-      <div class="accordion" id="accordionExample">
-        <ul class="list-group pre-scrollable">
-          {{#each landmarks}}
-          <li class="list-group-item">
-            <a href="landmark/{{id}}">{{title}}</a></li>
-          {{/each}}
-        </ul>
-      </div>
+    <div class="col scrollable">
+      <ul class="list-group">
+        {{#each landmarks}}
+        <li class="list-group-item">
+          <a href="landmark/{{id}}">
+            <button type="button" class="btn btn-primary">{{title}}</button>
+          </a>
+        </li>
+
+        {{/each}}
+      </ul>
     </div>
     <div class="col-8" id="map">
     </div>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2mlpNkm2BSpH1VtdzJ16OxAyKS6BSN9w&callback=initMap">
-      </script>
+
   </div>
 
 </div>

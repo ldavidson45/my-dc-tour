@@ -5,11 +5,15 @@ module.exports = {
         res.render('landmark/new')
     },
     create: function (req,res){
-        const {title, description, neighborhood } = req.body;
+        const {title, description, address, city, state } = req.body;
         Landmark.create({
             title,
             description,
-            neighborhood
+            address: {
+                street: address,
+                city,
+                state
+            }
         }).then(landmark => {
             res.redirect(`/landmark/${landmark._id}`);
         })
@@ -28,11 +32,15 @@ module.exports = {
         })
     },
     update: function(req, res) {
-        const { title, neighborhood, description } = req.body;
+        const { title, description, address, state, city} = req.body;
         Landmark.findByIdAndUpdate(req.params.id, {
             title,
             description,
-            neighborhood
+            address: {
+                street: address,
+                city,
+                state
+            }
         }).then(landmark => {
             res.redirect(`/landmark/${landmark._id}`)
         })
