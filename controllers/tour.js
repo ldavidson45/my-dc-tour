@@ -39,6 +39,8 @@ module.exports = {
 
     },
     delete: function(req, res){
+        Tour.findByIdAndDelete(req.params.id)
+        .then(res.redirect('/tour'))
 
     }
 
