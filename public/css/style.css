@@ -53,3 +53,12 @@ p {
 
 
   }
+
+  .show-tour-card {
+    background-color: rgba(0, 0, 0, 0.629);
+    border: none;
+    max-width: 40rem;
+    margin: auto;
+
+
+  }

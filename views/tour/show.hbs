@@ -1,24 +1,20 @@
-<div class="d-flex flex-column">
+<div class="container">
 
-  <h1>{{tour.title}}</h1>
-  <p>{{tour.description}}</p>
-  <div class="d-flex flex-row">
-    <div>
-      {{#each tour.landmarks}}
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h2 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-              {{title}}
-            </button>
-          </h2>
-        </div>
-      </div>
-      {{/each}}
-    </div>
-    <div>
-      map
-    </div>
-  </div>
+<div class="jumbotron mt-5 show-tour-card mw-50">
+  <h1 class="form-title">{{tour.title}}</h1>
+  <p class="form-inputs">{{tour.description}}</p>
+  <hr class="my-4">
+  <h1 class="form-title mt-3">Landmarks</h1>
+
+<div class="d-flex flex-row flex-wrap ">
+{{#each tour.landmarks}}
+  <a class="btn btn-primary m-2" href="/landmark/{{id}}" role="button">{{title}}</a>
+{{/each}}
+    <form action="/tour/{{tour.id}}?_method=DELETE" method="post" class="d-inline m-2">
+      <input type="submit" value="Delete" class="btn btn-danger">
+    </form>
+</div>
+
+</div>
+
 </div>
