@@ -50,3 +50,7 @@ To view, create, delete and update tours, a user will click on the profile icon 
 - Reconfigure Google Maps API so key is hidden
 - Add geolocation for landmarks and import to map
 - Add edit method to tours
+
+## Acknowledgements 
+
+I could not have built this application if I didn't have Zakk's to-do list applicaiton and Express Twitter to reference throughout the process. The WDI lessons also served as a great resource when I ran into issues or didn't know where to go next. 
