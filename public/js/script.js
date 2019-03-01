@@ -1,4 +1,3 @@
-var key = AIzaSyDqrPjYSAGEIGk8LTcKv1ICpaLUmP-tQU4
 
 var map;
 function initMap() {
