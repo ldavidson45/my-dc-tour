@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const passport = require('passport');
 const methodOverride = require('method-override');
+const flash = require("connect-flash");
+
 
 const app = express();
 
