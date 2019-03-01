@@ -2,6 +2,12 @@ const Tour = require ("../models/Tour");
 const Landmark = require("../models/Landmark")
 
 module.exports = {
+    index: function (req, res) {
+        Tour.find({})
+        .then(tours => {
+            res.render('tour/index', { tours })
+        })
+    },
     new: function(req, res) {
         Landmark.find({})
         .then(landmarks => {
